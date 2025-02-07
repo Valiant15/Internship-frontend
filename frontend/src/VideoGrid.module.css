@@ -1,0 +1,580 @@
+/* General Styling */
+.header {
+    background-color: rgb(30, 98, 116);
+    padding: 20px; 
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0; 
+    position: relative;
+    z-index: 48;
+  }
+
+
+.video-carousel-container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1500px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between arrows and videos */
+    flex-wrap: wrap;
+    padding: 10px;
+    z-index: 49;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 50px; /* Arrow width */
+    height: 100px; /* Taller, slim rectangle */
+    border: none;
+    background-color:#241d1daf ; 
+    font-size: 40px; /* Arrow size */
+    color: #ffffff; /* Arrow color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: #1f19197e; /* Slightly darker grey on hover */
+    transform: scale(1.1); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    content: ""; 
+}
+.video-slide-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    position: relative;
+}
+
+.video-rectangle {
+    width: 100%;
+    height: 100%;
+    max-width: 215px;
+    max-height: 440px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 0;
+    position: relative; /* Keeps positioning for child elements */
+}
+
+/* Position the info box directly on top of the video */
+.video-info {
+    position: absolute;
+    top: 86%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    height:70px;
+    width:206px;
+    transform: translate(-50%, -50%); /* Adjust to perfectly center */
+    background: rgba(255, 255, 255, 0.774); /* Semi-transparent white background */
+    padding: 8px 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center text */
+    z-index: 1; /* Ensure the info box appears on top of the video */
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000; /* Dark text color */
+    align-self: self-start;
+    font-style: normal;
+    text-transform: capitalize;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #075709; /* Green for the price */
+    /* margin-top: 4px; */
+    align-self: flex-start;
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+@media (max-width: 1233px) and (min-width: 1080px) {
+    .header {
+        background-color: rgb(30, 98, 116);
+        padding: 20px; 
+        color: white;
+        text-align: center;
+        font-size: 4rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0; 
+        position: relative;
+        z-index: 48;
+      }    
+    .video-carousel-container {
+        position: relative;
+        margin: 10 auto;
+        max-width: 1300px;
+        background-color: #ffffff;
+        border-radius: 12px;
+        /* display:block; */
+        align-items: center;
+        justify-content:space-between; /* Space between arrows and videos */
+        /* flex-wrap:wrap; */
+        /* padding: 10px; */
+        padding-right: 18px;
+        padding-left: 18px;
+        padding-top: 2px;
+        /* z-index: 49; */
+    }
+    
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 45px; /* Arrow width */
+        height: 90px; /* Taller, slim rectangle */
+        border: none;
+        background-color:#241d1daf ; 
+        font-size: 40px; /* Arrow size */
+        color: #ffffff; /* Arrow color */
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
+        background-color: #1f19197e; /* Slightly darker grey on hover */
+        transform: scale(1.1); 
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+    }
+    
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        content: ""; 
+    }
+    .video-slide-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        position: relative;
+    }
+    
+    .video-rectangle {
+        width: 100%;
+        height: 100%;
+        max-width: 189px;
+        max-height: 410px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        margin: 0;
+        position: relative; /* Keeps positioning for child elements */
+    }
+    
+    /* Position the info box directly on top of the video */
+    .video-info {
+        position: absolute;
+        top: 83%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        height:70px;
+        width:180px;
+        transform: translate(-50%, -50%); /* Adjust to perfectly center */
+        background: rgba(255, 255, 255, 0.774); /* Semi-transparent white background */
+        padding: 8px 12px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center text */
+        z-index: 1; /* Ensure the info box appears on top of the video */
+    }
+    .product-name {
+        font-size: 14px;
+        font-weight: 600;
+        color: #333; /* Dark text color */
+        margin: 0; /* Remove default margin */
+    }
+    
+    .product-price {
+        font-size: 12px;
+        font-weight: 500;
+        color: #4caf50; /* Green for the price */
+        margin-top: 4px;
+    }
+    
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+  }
+
+  @media (max-width: 1079px) and (min-width: 986px){
+    .header {
+        background-color: rgb(30, 98, 116);
+        padding: 20px; 
+        color: white;
+        text-align: center;
+        font-size: 4rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0; 
+        position: relative;
+        z-index: 48;
+      }    
+    .video-carousel-container {
+        position: relative;
+        margin: 10 auto;
+        max-width: 1300px;
+        background-color: #ffffff;
+        border-radius: 12px;
+        /* display:block; */
+        align-items: center;
+        justify-content:space-between; /* Space between arrows and videos */
+        /* flex-wrap:wrap; */
+        /* padding: 10px; */
+        padding-right: 18px;
+        padding-left: 18px;
+        padding-top: 2px;
+        /* z-index: 49; */
+    }
+    
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 40px; /* Arrow width */
+        height: 80px; /* Taller, slim rectangle */
+        border: none;
+        background-color:#241d1daf ; 
+        font-size: 40px; /* Arrow size */
+        color: #ffffff; /* Arrow color */
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
+        background-color: #1f19197e; /* Slightly darker grey on hover */
+        transform: scale(1.1); 
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+    }
+    
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        content: ""; 
+    }
+    .video-slide-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 450px;
+        position: relative;
+    }
+    
+    .video-rectangle {
+        width: 100%;
+        height: 100%;
+        max-width: 168px;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        margin: 0;
+        position: relative; /* Keeps positioning for child elements */
+    }
+    
+    /* Position the info box directly on top of the video */
+    .video-info {
+        position: absolute;
+        top: 86%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        height:65px;
+        width:160px;
+        transform: translate(-50%, -50%); /* Adjust to perfectly center */
+        background: rgba(255, 255, 255, 0.774); /* Semi-transparent white background */
+        padding: 8px 12px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center text */
+        z-index: 1; /* Ensure the info box appears on top of the video */
+    }
+    .product-name {
+        font-size: 14px;
+        font-weight: 600;
+        color: #333; /* Dark text color */
+        margin: 0; /* Remove default margin */
+    }
+    
+    .product-price {
+        font-size: 15px;
+        font-weight:bold;
+        color: #4caf50; /* Green for the price */
+        margin-top: 4px;
+        align-content:flex-end;
+    }
+    
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+  }
+
+  @media (max-width: 985px) and (min-width: 851px){
+    .header {
+        background-color: rgb(30, 98, 116);
+        padding: 20px; 
+        color: white;
+        text-align: center;
+        font-size: 4rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0; 
+        position: relative;
+        z-index: 48;
+      }    
+    .video-carousel-container {
+        position: relative;
+        margin: 10 auto;
+        max-width: 1300px;
+        background-color: #ffffff;
+        border-radius: 12px;
+        /* display:block; */
+        align-items: center;
+        justify-content:space-between; /* Space between arrows and videos */
+        /* flex-wrap:wrap; */
+        /* padding: 10px; */
+        padding-right: 18px;
+        padding-left: 18px;
+        padding-top: 2px;
+        /* z-index: 49; */
+    }
+    
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 40px; /* Arrow width */
+        height: 80px; /* Taller, slim rectangle */
+        border: none;
+        background-color:#241d1daf ; 
+        font-size: 40px; /* Arrow size */
+        color: #ffffff; /* Arrow color */
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
+        background-color: #1f19197e; /* Slightly darker grey on hover */
+        transform: scale(1.1); 
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+    }
+    
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        content: ""; 
+    }
+    .video-slide-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        /* padding-top: 10px; */
+        position: relative;
+    }
+    
+    .video-rectangle {
+        width: 100%;
+        height: 100%;
+        max-width: 154px;
+        max-height: 350px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        margin: 0;
+        /* padding-top: 10px; */
+        position: relative; /* Keeps positioning for child elements */
+    }
+    
+    /* Position the info box directly on top of the video */
+    .video-info {
+        position: absolute;
+        top: 85%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        height:63px;
+        width:148px;
+        transform: translate(-50%, -50%); /* Adjust to perfectly center */
+        background: rgba(255, 255, 255, 0.774); /* Semi-transparent white background */
+        padding: 8px 12px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center text */
+        z-index: 1; /* Ensure the info box appears on top of the video */
+    }
+    .product-name {
+        font-size: 14px;
+        font-weight: 600;
+        color: #333; /* Dark text color */
+        margin: 0; /* Remove default margin */
+    }
+    
+    .product-price {
+        font-size: 12px;
+        font-weight: 500;
+        color: #4caf50; /* Green for the price */
+        margin-top: 4px;
+    }
+    
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+  }
+
+  @media (max-width: 850px) and (min-width: 750px){
+    .header {
+        background-color: rgb(30, 98, 116);
+        padding: 20px; 
+        color: white;
+        text-align: center;
+        font-size: 4rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0; 
+        position: relative;
+        z-index: 48;
+      }    
+    .video-carousel-container {
+        position: relative;
+        margin: 10 auto;
+        max-width: 1300px;
+        background-color: #ffffff;
+        border-radius: 12px;
+        /* display:block; */
+        align-items: center;
+        justify-content:space-between; /* Space between arrows and videos */
+        /* flex-wrap:wrap; */
+        /* padding: 10px; */
+        padding-right: 18px;
+        padding-left: 18px;
+        padding-top: 0px;
+        /* z-index: 49; */
+    }
+    
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 35px; /* Arrow width */
+        height: 75px; /* Taller, slim rectangle */
+        border: none;
+        background-color:#241d1daf ; 
+        font-size: 40px; /* Arrow size */
+        color: #ffffff; /* Arrow color */
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
+        background-color: #1f19197e; /* Slightly darker grey on hover */
+        transform: scale(1.1); 
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+    }
+    
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        content: ""; 
+    }
+    .video-slide-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        /* padding-top: 10px; */
+        position: relative;
+    }
+    
+    .video-rectangle {
+        width: 100%;
+        height: 100%;
+        max-width: 132px;
+        max-height: 310px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        margin: 0;
+        /* padding-top: 10px; */
+        position: relative; /* Keeps positioning for child elements */
+    }
+    
+    /* Position the info box directly on top of the video */
+    .video-info {
+        position: absolute;
+        top: 79.8%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        height:63px;
+        width:127px;
+        transform: translate(-50%, -50%); /* Adjust to perfectly center */
+        background: rgba(255, 255, 255, 0.774); /* Semi-transparent white background */
+        padding: 8px 12px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center text */
+        z-index: 1; /* Ensure the info box appears on top of the video */
+    }
+    .product-name {
+        font-size: 14px;
+        font-weight: 600;
+        color: #333; /* Dark text color */
+        margin: 0; /* Remove default margin */
+    }
+    
+    .product-price {
+        font-size: 12px;
+        font-weight: 500;
+        color: #4caf50; /* Green for the price */
+        margin-top: 4px;
+    }
+    
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+  }
+
+ 
